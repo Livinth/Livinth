@@ -9,6 +9,29 @@
     border: none;
     outline: none;
 }
+/* Desktop default */
+.container {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+}
+
+/* Tablet (max-width 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+
+/* Mobile (max-width 480px) */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    font-size: 16px;
+  }
+}
+
 
 :root{
     --bg-color: #191919;
