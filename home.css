@@ -9,11 +9,39 @@
     border: none;
     outline: none;
 }
-/* Desktop default */
-.container {
-  width: 80%;
-  margin: auto;
-  font-size: 20px;
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+3. Mobile-specific adjustments:
+css
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Tablet (max-width 768px) */
